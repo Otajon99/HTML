@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basics</title>
     <style>
+        .link{
+            transition:0.2s;
+        }
+        .link:hover{
+            color: red;
+        }
         .cart{
             background-color:rgb(255,216,20);
             color:black;
@@ -13,15 +19,26 @@
             height: 30px;
             width:100px;
             cursor: pointer;
+            transition:0.15s;
+        }
+        .cart:hover{
+            opacity:0.6;
+        }
+        .cart:active{
+            opacity:0.4;
         }
         .buy{
-            background-color:rgb(255,164,28);
+            background-color:rgb(255, 164, 27);
             color:black;
             border:none;
             border-radius:20px;
             height:30px;
             width:100px;
             cursor: pointer;
+            transition:0.15s;
+        }
+        .buy:hover{
+            background-color:rgb(139, 95, 28) ;
         }
         .sale{
             color:rgb(0,114,0);
@@ -35,8 +52,8 @@
     <button type="submit" name="click"  >Click..</button>
     <p>Hello World!</p> <hr/>
     <p> Hello World!<br/><br/>  Today, i went to grocery store to buy some vegetables and eggs.</p>
-    <a href="https://www.google.com" target="_blank">Link to Google</a> <hr/>
-    <a href="https://www.amazon.com/?tag=amazusnavi-20&hvadid=675149237887&hvpos=&hvnetw=g&hvrand=16359592366152273634&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007218&hvtargid=kwd-10573980&ref=pd_sl_7j18redljs_e&hydadcr=28883_14649097">Link to Amazon</a>
+    <a class="link" href="https://www.google.com" target="_blank">Link to Google</a> <hr/>
+    <a class="link" href="https://www.amazon.com/?tag=amazusnavi-20&hvadid=675149237887&hvpos=&hvnetw=g&hvrand=16359592366152273634&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007218&hvtargid=kwd-10573980&ref=pd_sl_7j18redljs_e&hydadcr=28883_14649097">Link to Amazon</a>
      <h2>Black Nick shoes on sale.</h2>
      <p class="sale">$39 - in stock </p> 
      <p>Click the link above to go to Amazon</p>
