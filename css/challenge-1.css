@@ -1,0 +1,79 @@
+.back-button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.next-button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.table1{
+   padding: 10px;
+   text-decoration:underline;
+   color: rgb(25, 103, 158);
+   cursor: pointer;
+}
+.stretch{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: green;
+    color:white;
+    border: none;
+    margin-left:30px;
+    cursor: pointer;
+    border-radius:8px;
+    transition: 0.15em;
+}
+.stretch:hover{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+.stretch:active{
+    background-color: yellow;
+    color:black;
+}
+.shadow{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: green;
+    color:white;
+    border: solid;
+    margin-left:25px;
+    cursor: pointer;
+    border-radius:8px;
+    transition: 0.15em;
+}
+.shadow:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.shadow:active{
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.4);
+}
+.one{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: green;
+    color:white;
+    border: solid;
+    margin-left:15px;
+    cursor: pointer;
+    border-radius:8px;
+    transition: 0.15em;
+}
+.one:hover{
+    padding-left:40px;
+    padding-right:40px;
+}

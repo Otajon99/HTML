@@ -1,0 +1,40 @@
+.link{
+    transition:0.2s;
+}
+.link:hover{
+    color: red;
+}
+.cart{
+    background-color:rgb(255,216,20);
+    color:black;
+    border:none;
+    border-radius:20px;
+    height: 30px;
+    width:100px;
+    cursor: pointer;
+    transition:0.15s;
+}
+.cart:hover{
+    opacity:0.6;
+}
+.cart:active{
+    opacity:0.4;
+}
+.buy{
+    background-color:rgb(255, 164, 27);
+    color:black;
+    border:none;
+    border-radius:20px;
+    height:30px;
+    width:100px;
+    cursor: pointer;
+    transition:0.15s;
+}
+.buy:hover{
+    background-color:rgb(139, 95, 28) ;
+}
+.sale{
+    color:rgb(0,114,0);
+    font-weight: bold;
+    font-size:28px;
+}
