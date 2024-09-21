@@ -1,0 +1,51 @@
+.username{
+   
+    margin-bottom: 10px;
+    padding:5px 10px 5px 10px;
+    display: block;
+}
+.password{  
+    padding:5px 10px 5px 10px;
+}
+
+
+.service{
+    width:230px;
+}
+.service, .yes, .no{
+    display: inline-block;
+    vertical-align:middle;
+
+}
+.yes, .no{
+    padding:10px 20px 10px 20px;
+    margin-left:20px;
+}
+.page{
+    background-color:white;
+    width:600px;
+}
+.google_logo{
+    width: 500px;
+    display:block;
+    padding-left:30%;
+    margin-bottom:-70px;
+}
+.url{
+    width:700px;
+    height:35px;
+    font-style:center;
+    margin-left:70px;
+    border-radius:30px;
+    border:solid;
+    border-color:burlywood;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    margin-bottom:50px;
+    
+    
+}
+.url:hover{
+    opacity:0.3;
+    background-color: rgba(21, 230, 233, 0);
+}
+

@@ -1,0 +1,122 @@
+.cat_pic1{
+    width:200px;
+    height:200px;
+    margin-left:50px;
+    margin-top:10px;
+    border-radius:10px;
+    border-color:red;
+    border-style:solid;
+    object-fit:contain;
+    object-position:center;
+}
+.cat_pic2{
+    width:200px;
+    height:200px;
+    margin-left:50px;
+    margin-top:10px;
+}
+.cat_pic3{
+    width:200px;
+    height:200px;
+    margin-left:50px;
+    margin-top:50px;
+    border-radius:50%;
+}
+.search{
+    width:200px;
+    height:30px;
+    margin-top:50px;
+    margin-left:50px;
+    border-radius:10px;
+    border:solid;
+    transition:0.2s;
+    border-color: rgb(184, 175, 175);
+}
+.search:active{
+    border-color:rgb(184, 175, 175);
+    border:none;
+}
+.URL{
+    width:200px;
+    height:30px;
+    margin-top:50px;
+    margin-left:50px;
+    border-radius:10px;
+    border:thin;
+    background-color: antiquewhite;
+    transition:0.2s;
+
+}
+.URL:hover{
+    box-shadow: 5px 5px 10px rgba(241, 10, 10, 0.2);
+}
+.URL:active{
+    border:thin;
+    border-color:none;
+    background-color: antiquewhite;
+}
+.p_mail{
+    margin-top:50px;
+    margin-left:50px;
+
+}
+.email{
+    width:400px;
+    height:30px;
+    border-radius:10px;
+    border:solid;
+    border-color:rgb(147, 152, 157);
+    margin-top:10px;
+
+}
+span{
+    margin-left:10px;
+}
+.policy{
+    margin-left:50px;
+}
+.agree{
+    margin-top:10px;
+    width:400px;
+    height:30px;
+    background-color:rgb(10, 172, 200);
+    color:white;
+    border:none;
+    border-color:none;
+    text-align:20px;
+    cursor:pointer;
+}
+
+.logo{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    margin-bottom:-10px;
+    border-width:1px;
+    border-style:none;
+    border-color: azure;
+    cursor: pointer;
+}
+.comment{
+    vertical-align:right;
+    width:max-content;
+}
+.tweet{
+    padding:10px 2px 10px 2px;
+    text-align:center;
+    margin-left:30px;
+    margin-right:50px;
+    width:100px;
+    background-color:rgb(10, 172, 200) ;
+    border:none;
+    border-color:none;
+    color:white;
+    border-radius:20px;
+    cursor: pointer;
+}
+.text_box{
+ height:30px;
+ width:300px;
+ border:none;
+
+}
