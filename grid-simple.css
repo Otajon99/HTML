@@ -1,0 +1,14 @@
+.colum1{
+    background-color: antiquewhite;
+}
+.colum2{
+    background-color: aqua;
+}
+.container{
+    background-color: rgb(229, 235, 233);
+    display:grid;
+    grid-template-columns:250px 75px;
+    height: 30px;
+    padding-bottom:20px;
+
+}
