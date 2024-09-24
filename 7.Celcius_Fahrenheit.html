@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celcius Fahrenheit</title>
+</head>
+<body>
+    <script>
+        function convertToF(Celcius){
+            Fahrenheit=(Celcius*9/5)+32;
+            console.log(Fahrenheit);
+        }
+
+        function convertToC(Fahrenheit){
+            Celcius=(Fahrenheit-32)*5/9;
+            console.log(Celcius);
+        }
+
+        function convertTemperature(degree,unit){
+           
+            if(unit==="C" || unit==="c"){
+                Fahrenheit=(degree*9/5)+32;
+                console.log(`It is ${Fahrenheit} Fahrenheit`);
+
+            }else if(unit==="F" || unit==="f"){
+                Celcius=(degree-32)*5/9;
+                console.log(`It is ${Celcius} Celcius`);
+            }else{
+            console.log("Press C/c or F/f to choose corrent unit!");
+            }
+                
+        }
+
+        convertToC(86);
+        convertToF(25);
+        convertTemperature(86,"F");
+        convertTemperature(25,"c");
+        convertTemperature(25,"d");
+    </script>
+</body>
+</html>
