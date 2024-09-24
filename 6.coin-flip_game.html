@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coin-flip game</title>
+</head>
+<body>
+    <script>
+    </script>   
+    
+    <button onclick="
+        let randNumber=Math.random();
+        let computerChoice='';
+
+        /*
+        if(randNumber<0.5){
+           computerChoice='head';
+        }else if(randNumber>=0.5){
+            computerChoice='tail';
+        }
+        */
+
+        randNumber<0.5 ? computerChoice='head' : computerChoice='tail'
+
+        console.log(computerChoice);
+
+        /*
+        if(computerChoice==='head'){
+            console.log('You win!');
+        }else if(computerChoice==='tail'){
+            console.log('You lost!');
+        }
+        */
+        result=''
+        computerChoice==='head' ? result='You win!' : result='You lost!'
+        console.log(result);
+        ">head</button>
+
+    <button onclick="
+        let randNumber=Math.random();
+        let computerChoice='';
+        if(randNumber<0.5){
+           computerChoice='head';
+        }else if(randNumber>=0.5){
+            computerChoice='tail';
+        }
+        console.log(computerChoice);
+
+        if(computerChoice==='head'){
+            console.log('You lost!');
+        }else if(computerChoice==='tail'){
+            console.log('You win!');
+        }
+    ">tail</button>
+
+   
+</body>
+</html>
