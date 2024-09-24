@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Length</title>
+</head>
+<body>
+    <script>
+        function convertLength(length, from, to){
+            if (from==='km'){
+                if(to==='miles'){
+                    console.log(`${length}${from}=${length/1.6}${to}`);
+                }else if(to==='ft'){
+                    console.log(`${length}${from}=${length*3281}${to}`)
+                }else if(to==='km'){console.log(`${length}${from}`);}
+                else {console.log(`${to} is not a length value! type correct one!`);}
+            
+            }else if(from==='miles'){
+                if(to==='km'){
+                    console.log(`${length}${from}=${length*1.6}${to}`);
+                }else if(to==='ft'){
+                    console.log(`${length}${from}=${length*5280}${to}`);
+                }else if(to==='miles'){console.log(`${length}${from}`);
+                }else {console.log(`${to} is not a length value! type correct one!`);}
+            
+            }else if (from==='ft'){
+                if(to==='km'){
+                    console.log(`${length}${from}=${length/3281}${to}`);
+                }else if(to==='miles'){
+                    console.log(`${length}${from}=${length/5280}${to}`);
+                }else if(to==='ft'){console.log(`${length}${from}`);}
+                else {console.log(`${to} is not a length value! type correct one!`);}
+            
+            }else {console.log(`${from} is not a length value! type correct one!`);}
+
+        }
+
+
+        convertLength(10,'km','ft');
+        convertLength(32,'miles','km');
+        convertLength(1,'km','ft');
+        convertLength(54262,'ft','miles');
+        convertLength(54262,'ft','km');
+        convertLength(12,'km','km');
+        convertLength(12,'miles','miles');
+        convertLength(2,'kmw','dkm');
+        convertLength(0,'km','nnkm');
+    </script>
+</body>
+</html>
