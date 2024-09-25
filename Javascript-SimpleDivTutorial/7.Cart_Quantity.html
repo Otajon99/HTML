@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    
+
+
+</head>
+<body>
+        <script>
+            let cartQuantity=0;
+            let change=0;
+            function updatecartQuantity(change){
+                if(cartQuantity+change>10){
+                    alert(`You reached to maximum amount of shopping cart!`);
+                    return;
+                }else if(cartQuantity+change<0){
+                    alert(`Not enough items in shopping cart!`);
+                    return;
+                }else{
+                    cartQuantity+=change;
+                    console.log(`cartQuantity: ${cartQuantity}`);
+                }
+            }
+        </script>
+       
+        <button onclick="
+          console.log(`cartQuantity: ${cartQuantity}`);
+        ">Show Quantity</button>
+
+
+        <button onclick="
+            updatecartQuantity(1);
+        ">Add to Cart</button>
+
+
+        <button onclick="
+            updatecartQuantity(2);
+        ">+2</button>
+
+
+        <button onclick="
+            updatecartQuantity(3);
+        ">+3</button>
+
+        <button onclick="
+            updatecartQuantity(4);
+        ">+4</button>
+
+        <button onclick="
+            updatecartQuantity(5);
+        ">+5</button>
+
+        <button onclick="
+            updatecartQuantity(-1);
+        ">Remove 1 item</button>
+
+        <button onclick="
+            updatecartQuantity(-2);
+        ">Remove 2 items</button>
+
+        <button onclick="
+            updatecartQuantity(-3);
+        ">Remove 3 items</button>
+
+
+        <button onclick="
+            cartQuantity=0;
+            console.log(`Cart was reset!`);
+            console.log(`cartQuantity: ${cartQuantity}`);
+        ">Reset Cart</button>
+
+</body>
+</html>
