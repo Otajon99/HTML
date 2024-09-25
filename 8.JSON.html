@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build_in_Objects</title>
+</head>
+<body>
+    <script>
+        const product2={
+            name:'shirt',
+            'delivery-time':'1 day',
+
+            'rating':{
+                'stars': 4.5,               // Nested Loops inside of Object
+                'count':87
+            },
+        };
+// 1- check 
+        console.log(product2);
+
+
+//2-Convert to JSON and check type
+        console.log(JSON.stringify(product2));              // stringify-- Convert JavaScript Object to JSON
+        console.log(typeof JSON.stringify(product2));
+
+
+//3-Convert back to JavaScript Object
+        const jsonString=JSON.stringify(product2);
+        console.log(JSON.parse(jsonString));               // parse-- Converts JSON to JavaScript Object
+    </script>
+
+    
+</body>
+</html>

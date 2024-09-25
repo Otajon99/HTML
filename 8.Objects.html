@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        const product={
+            name:'socks',
+            price:1090
+    };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+        console.log(typeof product);         //  type of product ---- Object
+        
+//----  Change property name or value; 
+        product.name='cotton socks';
+        console.log(product);
+
+
+//----  Add new property to Object.
+        product.newProperty=true;
+        console.log(product);
+
+
+//----  Delete product from Object.
+        delete product.name;
+        console.log(product);
+
+
+//----- Bracket [] notation and Dot . notation
+        
+        const product2={
+            name:'shirt',
+            'delivery-time':'1 day',
+
+            rating:{
+                stars: 4.5,               // Nested Loops inside of Object
+                count:87
+            },
+
+            fun: function function1(){                   // Method or 
+                console.log(`function inside Object`);   // Function inside of Object
+            }
+        };
+        console.log(product2);
+        console.log(product2.name);                // Dot Notation
+        console.log(product2['name']);             // Bracket Notation
+        console.log(product2['delivery-time']);    // Use Square Bracket([]) for Dash(-)
+        
+
+
+        console.log(product2.rating.stars);         // Calling Nested loops
+        console.log(product2.rating.count);
+
+
+        
+        product2.fun();                             // Execute Method(Function inside of Object)
+    </script>
+</body>
+</html>
