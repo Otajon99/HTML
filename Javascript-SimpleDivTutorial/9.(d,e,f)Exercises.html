@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>9-Exercises</title>
+</head>
+<body>
+    <p>Hello</p>
+    <input class="js-your-input" type="text" placeholder="What is your name?" onkeydown="
+    handleKeyDown(event);
+    ">
+    <button onclick="
+        inputFunction(value);
+        ">Submit</button>
+
+    <p class="displayHere"> </p>
+    
+    <script>
+        function handleKeyDown(event){
+            if(event.key==='Enter'){
+                inputFunction();
+            }
+        }
+        function inputFunction(value){
+            const inputElement=document.querySelector('.js-your-input');
+            let finalStep=inputElement.value;
+            document.querySelector('.displayHere')
+            .innerHTML=`${inputElement.value}`;
+        }
+    </script>
+</body>
+</html>
